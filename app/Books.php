@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Books extends Model
 {
 	protected $table='list_books';
+
 }

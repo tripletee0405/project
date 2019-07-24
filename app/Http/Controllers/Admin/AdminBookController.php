@@ -16,12 +16,7 @@ class AdminBookController extends Controller
      */
     public function index()
     {
-        $books = DB::table('list_books')->select('*');
-        $books = $books->get();
-
-        $pageName = 'List Book';
-
-        return view('/admin/list_book', compact('books', 'pageName'));
+        return Books::get();
     }
 
     /**

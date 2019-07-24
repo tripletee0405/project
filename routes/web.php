@@ -28,3 +28,8 @@ Route::get('/admin/detail_book/{id}', 'Admin\AdminBookController@show');
 Route::get('/admin/edit_book/{id}', 'Admin\AdminBookController@edit');
 Route::PATCH('/admin/update_book/{id}', 'Admin\AdminBookController@update');
 Route::DELETE('/admin/delete_book/{id}', 'Admin\AdminBookController@destroy');
+
+Route::get('/adminvuejs/index', function () {
+    return view('index');
+});
+Route::resource('/book', 'Admin\AdminBookController');
